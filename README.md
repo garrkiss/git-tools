@@ -14,21 +14,21 @@ Date:   Thu Jun 18 10:29:58 2020 -0400
 
 ### Задание 2. Ответьте на вопросы
 
-⋅⋅*Какому тегу соответствует коммит 85024d3?
+- Какому тегу соответствует коммит 85024d3?
 
 ```
 git show 85024d3
 commit 85024d3100126de36331c6982bfaac02cdab9e76 (tag: v0.12.23)
 ```
 
-⋅⋅*Сколько родителей у коммита b8d720? Напишите их хеши.
+- Сколько родителей у коммита b8d720? Напишите их хеши.
 
 ```
 git show b8d720 --pretty=%P
 56cd7859e05c36c06b56d013b55a252d0bb7e158 9ea88f22fc6269854151c571162c5bcf958bee2b
 ```
 
-⋅⋅*Перечислите хеши и комментарии всех коммитов, которые были сделаны между тегами v0.12.23 и v0.12.24.
+- Перечислите хеши и комментарии всех коммитов, которые были сделаны между тегами v0.12.23 и v0.12.24.
 
 ```
 git log --oneline v0.12.23..v0.12.24
@@ -51,7 +51,7 @@ git log -S'func providerSource(' --oneline
 8c928e8358 main: Consult local directories as potential mirrors of providers
 ```
 
-⋅⋅*Найдите все коммиты, в которых была изменена функция globalPluginDirs.
+- Найдите все коммиты, в которых была изменена функция globalPluginDirs.
 
 ```
 git log -G'globalPluginDirs' --oneline
@@ -61,7 +61,7 @@ c0b1761096 prevent log output during init
 8364383c35 Push plugin discovery down into command package
 ```
 
-⋅⋅*Кто автор функции synchronizedWriters?
+- Кто автор функции synchronizedWriters?
 
 ```
 git log -S 'func synchronizedWriters'
